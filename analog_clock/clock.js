@@ -1,6 +1,5 @@
 // 시계 총괄
 const clock_container = document.getElementById("clock_container")
-const clock = document.getElementById("clock")
 
 // 시간 표시 라인
 for (let i = 0; i < 30; i++) {
@@ -42,7 +41,7 @@ let previous_seconds_degree = 0
 let previous_minutes_degree = 0
 let previous_hours_degree = 0
 
-// setTimeInterval 사용
+// setInterval 사용
 setClock = () => {
   let current_time = new Date()
   let hours = current_time.getHours()
@@ -57,7 +56,7 @@ setClock = () => {
   // 1시간당 30도 + 그리고 30도를 60분으로 나눠서 0.5씩 분마다 더움직이게, 그리고 초와 밀리초까지 계산
   let hours_degree = 30 * (hours % 12) + (0.5 * minutes) + (30 / 3600 * seconds) + (30 / 60 / 60 / 1000 * milliseconds)
   
-  seconds_time.style.transform = `rotate(${seconds_degree}deg)`;
+  seconds_time.style.transform = `rotate(${seconds_degree}deg)`
   minutes_time.style.transform = `rotate(${minutes_degree}deg)`
   hours_time.style.transform = `rotate(${hours_degree}deg)`
 
@@ -125,7 +124,7 @@ setClock = () => {
   // console.log(closing_d.toLocaleDateString()) // 이번달의 마지막날
   let closing_date = closing_d.getDate()
   // 지난 달의 마지막날
-  let pre_d = new Date();
+  let pre_d = new Date()
   let pre_closing_d = new Date(pre_d.getFullYear(), pre_d.getMonth(), 0)
   // console.log(pre_closing_d.toLocaleDateString()) // 이전 달의 마지막 날
   let pre_closing_date = pre_closing_d.getDate()
