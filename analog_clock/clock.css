@@ -17,7 +17,6 @@ body{
   border-radius: 30vmin;
   position: relative;
   background: radial-gradient(circle, #ffffff 0%, #3ed4be 100%);
-  /* background: #3ed4be; */
 }
 .line{
   position: absolute;
@@ -55,7 +54,6 @@ body{
   top: calc(50% - 29vmin);
   left: calc(50% - 29vmin);
   z-index: 3;
-  /* background: #a4ebe0; */
   background: radial-gradient(circle, #ffffff 0%, #a4ebe0 100%);
 }
 .clock-body-add2{
@@ -73,8 +71,6 @@ body{
 .clock-body{
   width: 52vmin;
   height: 52vmin;
-  /* border: 1px solid #000000; */
-  /* border-collapse: collapse; */
   border-radius: 26vmin;
   position: relative;
   top: calc(50% - 26vmin);
@@ -127,19 +123,6 @@ body{
   transform-origin : 50% 100%;
   transform: rotate(180deg);
 }
-
-/* .inner-date{
-  width: 40vmin;
-  height: 40vmin;
-  border: 1px solid #000000;
-  border-collapse: collapse;
-  border-radius: 20vmin;
-  position: relative;
-  top: calc(50% - 20vmin);
-  left: calc(50% - 20vmin);
-  background: #ffffff;
-  z-index: 4;
-} */
 .inner-date {
   width: 40vmin;
   height: 40vmin;
@@ -170,8 +153,6 @@ body{
   justify-content : flex-end;
   align-items : center;
 }
-
-
 
 .date-container{
   margin: 5vmin;
